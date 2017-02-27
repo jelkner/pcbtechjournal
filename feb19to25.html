@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Advanced Topics Journal - Week of Feb. 19 to 25, 2017</title>
+<style type="text/css">
+@import url(css/style.css);
+</style>
+</head>
+<body>
+<h1>Advanced Topics Journal - Week of February 19 to 25, 2017</h1>
+
+<main>
+<h2>Day 1: The Plan</h2>
+<p>
+I have two goals for the coming week:
+</p>
+<ul>
+  <li>Learn to the latest CSS layout techniques using two tutorials - 
+  <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete
+  Guide to Flexbox</a> and
+  <a href="https://css-tricks.com/snippets/css/complete-guide-grid">A Complete
+  Guide to Grid</a>.  Both of these tutorials are from the wonderful
+  <a href="https://css-tricks.com">https://css-tricks.com</a> website.</li>
+
+  <li>Continue to make progress going through
+  <a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world">The Flask Mega-Tutorial</a>.
+  I am currently in the middle of
+  <a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-iv-database">Part IV: Database</a> and have been
+  posting my progress to a
+  <a href="https://github.com">github</a> repository
+  <a href="https://github.com/jelkner/flaskmicroblog">here</a>.</li>
+</ul>
+<p>
+I wanted to use both grid layout and
+<a href="https://en.wikipedia.org/wiki/Media_queries">media queries</a> to
+style the pages for the <i>Unsung Sheroes of Computer Science</i> project for
+our computer lab. After some quick investigation, I came across
+<a href="http://caniuse.com/#feat=css-grid">this</a> page, which makes clear
+that I'm a wee bit early on using grid.  It will be supported in Firefox 52.
+I'm currently running Firefox 51, so support is on its way, but I perfer to
+wait at least until the current Ubuntu version of Firefox support what I'm
+learning.
+</p><p>
+Instead of a using a grid layout, I just applied the <code>table-row</code>
+and <code>table-cell</code> display types to child elements of a
+<code>figure</code> element to achieve the layout I wanted.  I started with
+Edzon's work on the <i>Unsung Sheroes</i> and modified it to produce
+<a href="../sheroes">this</a> result.
+</p>
+
+<h2>Day 2</h2>
+<p>
+I completed
+<a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-iv-database">The Flask Mega-Tutorial, Part IV: Database</a> this morning.  My
+git commit for this is
+<a href="https://github.com/jelkner/ScientificProgramming/blob/31084973712328bd1cc996d62b94d11b80b76eeb/guassjordan/gaussian_elimination_gencase.py">here</a>.
+</p><p>
+Since many Web II students will be starting to learn about
+<a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a> this week,
+I went searching for good resources to supplement our CIW materials. One
+promising site is
+<a href="http://www.codeconquest.com/blog/top-50-websites-to-learn-javascript">
+Top 50 Websites to Learn JavaScript</a>. One gem I found on the list is
+<a href="http://jsforcats.com">JavaScript for Cats</a>, which as a cat lover
+myself, I found appealing from the start ;-)
+</p>
+
+<h2>Day 3</h2>
+<p>
+Two significant accomplishments completed today!
+</p>
+<ol>
+<li>
+I reviewed
+<a href="https://en.wikipedia.org/wiki/Gaussian_elimination">Gaussian
+elimination</a> and created a Python program using
+<a href="https://en.wikipedia.org/wiki/SymPy">SymPy</a> to transform a general
+<a href="https://en.wikipedia.org/wiki/Augmented_matrix">augmented matrix</a>
+into
+<a href="https://en.wikipedia.org/wiki/Row_echelon_form">row echelon form</a>.
+I added that program to my
+<a href="https://github.com/jelkner/ScientificProgramming">Scientific
+Programming</a> github repository
+<a href="https://github.com/jelkner/ScientificProgramming/blob/31084973712328bd1cc996d62b94d11b80b76eeb/guassjordan/gaussian_elimination_gencase.py">here</a>.
+</li>
+
+<li>
+I setup an Ubuntu 16.04 web server in the classroom and transferred all user
+accounts from the public student web server to the in classroom one.  During
+class I varified that students could login to the local server and see there
+web files.  Tomorrow I'll show students how to use the
+<a href="https://en.wikipedia.org/wiki/Rsync">rsync</a> utility to synchronize
+files between the two servers.
+</li>
+</ol>
+
+<h2>Day 4: Evaluation</h2>
+<p>
+I had two goals for this week: learn more advanced CSS layout techniques and
+move forward with a study of Flask.  I made significant progress on both goals,
+but I had to adjust the resources I planned to use with each. Grid layout is
+not yet ready, so I went back to using a combination of
+<code>display: table-row</code> and <code>display: table-cell</code> to get
+the layout I wanted. The Flask tutorial I began at the beginning of the week
+proved unsuitable by the middle of the week for reasons described, so I had to
+search out alternative resources.
+</p>
+</main>
+
+<footer>
+<a href="http://validator.w3.org/check/referer">
+<strong> HTML </strong> Valid! </a> |
+<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">
+<strong> CSS </strong> Valid! </a>
+</footer>
+</body>
+</html>

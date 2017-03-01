@@ -63,12 +63,69 @@ class and who can handle the extra learning load. Later I'll ask them to help
 spread the knowledge to others.
 </p>
 
-<h2>Day 3</h2>
+<h2>Day 3 - Tuesday, Feb. 28</h2>
 <p>
+Marco has been working on a
+<a href="https://en.wikipedia.org/wiki/How-to">How-to</a> for using
+<a href="https://en.wikipedia.org/wiki/GNU_Screen">screen</a> to share a
+<a href="https://en.wikipedia.org/wiki/Virtual_console">virtual console</a>
+among the students in the class. This will allow us to write code together,
+and provide an opportunity to practice interactive discipline, timing, and
+effective communication at the same time we are learning Python, etc.
+I'm coming in earnly tomorrow morning, so I plan to use that opportunity to
+test out Marco's latest incarnation of the the How-to and share how it works
+here.
+</p><p>
+In other news, the APS network lost
+<a href="https://en.wikipedia.org/wiki/Domain_Name_System">DNS</a> last night
+during my evening class. In the past, this would have brought classwork to
+a halt, but with the inhouse network Marco setup for us, students were able to
+continue working without missing a beat!
 </p>
 
-<h2>Day 4</h2>
+<h2>Day 4 - Wednesday, March 1</h2>
+
+<h3>7:29 am</h3>
 <p>
+Here is what I did as a first attempt at setting up a shared screen session:
+</p>
+<ol>
+  <li>Logged into rteitelbaum, the laptop connected to the projector in the
+  front of the classroom.  Started an X terminal session and sshed from there
+  to the ebgranville classroom web server.</li>
+
+  <li>Logged in (using ssh) to ebgranville from my desktop workstation,
+  ghopper, and ran the following commands:
+  <pre>
+  $ sudo chmod u+s $(which screen)
+  $ sudo chmod 755 /var/run/screen 
+  </pre></li>
+
+  <li>Confirmed that my <code>.screenrc</code> file had the following:
+  <pre>
+  multiuser on
+
+  # Grant users access to screen sessions
+  acladd [username]
+  ...
+  acladd [username]
+  </pre>
+  and that my <code>.bash_aliases</code> file contained the following:
+  <pre>
+  # screen aliases
+  screens() { screen -aAOS $1;}
+  </pre></li>
+
+  <li>Typed:
+  <pre>
+  $ screens sharedscreen1
+  </pre>
+  in the projected virtual console.</li>
+</ol>
+<p>
+Marco's instructions don't explain how users connect to a screen session, so
+I'll have to wait for him to read this and revise his instructions in response
+before testing further.
 </p>
 
 <h2>Day 5</h2>

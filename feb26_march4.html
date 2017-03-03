@@ -66,6 +66,7 @@ I demoed git to two students in class who will learn it this week and then
 share what they learn with classmates starting next week.
 </p>
 
+
 <h2>Day 3 - Tuesday, Feb. 28</h2>
 <p>
 Marco has been working on a
@@ -85,6 +86,7 @@ during my evening class. In the past, this would have brought classwork to
 a halt, but with the inhouse network Marco setup for us, students were able to
 continue working without missing a beat!
 </p>
+
 
 <h2>Day 4 - Wednesday, March 1</h2>
 
@@ -150,25 +152,68 @@ of what was there (still keeping it in the project history in case I want it
 later) and ready myself to begin anew.
 </p>
 
-<h2>Day 5</h2>
+
+<h2>Day 5 - Thursday, March 2</h2>
 
 <h3>9:00 am - Meeting with Micky and Charlie</h3>
 <p>
 Wow, what a morning! I had a long awaited phone conference with
 <a href="http://platformcoop.net/2016/participants/micky-metts">Micky Metts</a>
 and <a href="http://charliereisinger.com/">Charlie Reisinger</a>. It was
-everything I had hoped it would be and more. Then, as if by divine intervention,
-two of our School Board members walked into my building and I took the
-opportunity to hand them a copy of Charlie's book,
+everything I had hoped it would be and more. Immediately thereafter, as if by
+divine intervention, two of our School Board members walked into my building
+and I took the opportunity to hand them a copy of Charlie's book,
 <a href="https://www.amazon.com/Open-Schoolhouse-Building-Technology-Transform/dp/1537484052">The Open Schoolhouse: Building a Technology Program to Transform Learning and Empower Students</a>.
 Let's see what good things can come from this. I'm hoping we'll look back later
 and view this as the seed from which grew <i>The Coalition of Open
 Schoolhouses</i>.
 </p>
 
+<h3>12:30 pm - A Shared Screen Session</h3>
+<p>
+Six of us shared a single screen session and wrote Python together to transform
+an augmented matrix into reduced row echelon form. After modifying
+<code>.screenrc</code> and <code>.bash_aliases</code> as described in
+yesterday's post, here is the process:
+</p>
+<h4>Screen Sharer Setup</h4>
+<p>
+Use ssh to connect from the presentation laptop to the in class web server and
+run the following commands:
+</p>
+<pre style="margin-left: 20px;">
+$ sudo chmod 755 /var/run/screen
+$ screens sharedscreen
+</pre>
 
+<h4>Connecting to the Shared Screen</h4>
+<p>
+Users can then connect to the shared screen by sshing into the classroom
+webserver and running:
+</p>
+<pre style="margin-left: 20px;">
+$ sreen -x [username of screensharer]/
+</pre>
+<p>
+<i>Note:</i> the <code>username/</code> following <code>-x</code> assumes only
+a single screen is being shared.  If there are more than one shared screens,
+then:
+</p>
+<pre style="margin-left: 20px;">
+$ sreen -x [username of screensharer]/[screenname]
+</pre>
+<p>
+would be required.
+</p>
 
-<h2>Day 6: Evaluation</h2>
+<h3>8:30 pm - Finished microblog Flask App</h3>
+<p>
+I finished a working version of the microblog Flask app and updated my
+<a href="https://github.com/jelkner/flaskmicroblog">flaskmicroblog</a> GitHub
+repo. I'm exhausted, but all in all it was a fantastic day!
+</p>
+
+<h2>Day 6 - Friday, March 3: Evaluation</h2>
 <p>
 </p>
 </main>

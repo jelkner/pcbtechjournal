@@ -100,9 +100,46 @@ task will be to get it running.
 
 
 <h2>Day 3 - Tuesday, March 7</h2>
-<p>
-</p>
 
+<h3>Setting Up a <code>novaweb</code> Machine</h3>
+<p>
+Since it lacks a <code>requirements.txt</code> file or a
+<a href="https://virtualenv.pypa.io/en/stable/">virtualenv</a>, and since both
+<a href="https://en.wikipedia.org/wiki/Flask_(web_framework)">Flask</a> and
+<a href="https://en.wikipedia.org/wiki/MySQL">MySQL</a> have changed
+significantly over the past two years, here is what I did to start trying to
+get the <a href="https://github.com/novawebdevelopment/novaweb">novaweb</a>
+application running again:
+</p>
+<ol>
+  <li>Setup a virtual machine (using KVM) running Ubuntu 14.04 server.</li>
+
+  <li>Ran:<pre>
+  $ sudo apt install mysql-server python-flask python-flask-login git
+  </pre></li>
+
+  <li>Ran:<pre>
+  git clone git@github.com:novawebdevelopment/novaweb.git
+  </pre></li>
+</ol>
+<p>
+I set the MySQL root user password to <code>novaweb</code>. I'm taking this
+approach since the application was created two years ago, and it was either
+running on Debian or Ubuntu (probably, Debian, now that I think about it,
+but this is approach will probably have similiar enough versions of the
+required software). I want to avoid changes in the module import behavior of
+Flask, so I'm hoping the version installed from the distribution repository
+will work with the application.
+</p><p>
+After following the process described above and launching
+<code>runserver.py</code>, I encountered the error with a missing
+<code>config.py</code> file. That makes sense, since configuration information
+shouldn't be kept in a source repository, but now I need to figure out how
+to recreate the file. Marco told me that we have a version of this application
+on our
+<a href="https://www.webfaction.com">WebFaction</a> account.  I'll ask him
+about that when he comes in today.
+</p>
 
 <h2>Day 4, Wednesday, March 8</h2>
 <p>

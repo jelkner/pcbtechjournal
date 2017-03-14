@@ -21,6 +21,10 @@ h2 {
 li {
     margin-top: 10px;
 }
+pre.shell {
+    margin-left: 30px;
+    padding: 10px;
+}
 footer {
     margin-top: 15px;
 }

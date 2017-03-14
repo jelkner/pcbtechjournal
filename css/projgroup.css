@@ -1,0 +1,11 @@
+dl.projgroup {
+    margin-left: 30px;
+}
+dl.projgroup > dt {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+dl.projgroup > dd {
+    margin-top: 10px;
+}
